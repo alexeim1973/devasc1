@@ -7,5 +7,5 @@ Things to do:
   - static definition for m2 MVC db
 
 ### Used for training purposes by Alexei Monastyrnyi
-    2022-06-27 - playing with Git
+    2022-06-27 - playing with Git and GitHub Desktop
 
