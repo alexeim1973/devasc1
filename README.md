@@ -6,5 +6,6 @@ Things to do:
   - json, yaml, and xml need to move from m2 to m3 for MVC db
   - static definition for m2 MVC db
 
-### Used for training purposes
+### Used for training purposes by Alexei Monastyrnyi
+
 
