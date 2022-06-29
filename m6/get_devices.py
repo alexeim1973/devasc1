@@ -25,7 +25,7 @@ def main():
 
     # Issue HTTP GET request to get list of network devices
     get_resp = requests.get(
-        f"{api_path}/intent/api/v1/network-device", headers=headers
+        f"{api_path}/intent/api/v1/network-device", headers=headers, verify=False
     )
 
     # Debugging output to learn the JSON structure, then quit
@@ -34,7 +34,7 @@ def main():
     # Iterate over list of dictionaries and print device ID and management IP
     if get_resp.ok:
         for device in get_resp.json()["response"]:
-            print(f"ID: {device['id']}  IP: {device['managementIpAddress']}")
+            print(f"Hostname: {device['hostname']}  IP: {device['managementIpAddress']}")
     else:
         print(f"Device collection failed with code {get_resp.status_code}")
         print(f"Failure body: {get_resp.text}")

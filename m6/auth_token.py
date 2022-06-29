@@ -22,7 +22,7 @@ def get_token():
 
     # Issue HTTP POST request to the proper URL to request a token
     auth_resp = requests.post(
-        f"{api_path}/system/api/v1/auth/token", auth=auth, headers=headers
+        f"{api_path}/system/api/v1/auth/token", auth=auth, headers=headers, verify=False
     )
 
     # If successful, print token. Else, raise HTTPError with details

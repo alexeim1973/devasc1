@@ -44,6 +44,7 @@ def main():
         f"{api_path}/intent/api/v1/network-device",
         json=new_device_dict,
         headers=headers,
+        verify=False
     )
 
     if add_resp.ok:

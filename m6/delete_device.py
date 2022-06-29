@@ -28,7 +28,7 @@ def main():
     delete_ip = "192.0.2.1"
     get_resp = requests.get(
         f"{api_path}/intent/api/v1/network-device/ip-address/{delete_ip}",
-        headers=headers,
+        headers=headers, verify=False
     )
 
     # If the device was found, continue with deletion
